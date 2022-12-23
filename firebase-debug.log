@@ -1,0 +1,36 @@
+[debug] [2022-12-08T09:05:23.890Z] ----------------------------------------------------------------------
+[debug] [2022-12-08T09:05:23.892Z] Command:       /usr/local/Cellar/node/18.11.0/bin/node /usr/local/bin/firebase serve
+[debug] [2022-12-08T09:05:23.892Z] CLI Version:   11.16.1
+[debug] [2022-12-08T09:05:23.892Z] Platform:      darwin
+[debug] [2022-12-08T09:05:23.892Z] Node Version:  v18.11.0
+[debug] [2022-12-08T09:05:23.893Z] Time:          Thu Dec 08 2022 01:05:23 GMT-0800 (Pacific Standard Time)
+[debug] [2022-12-08T09:05:23.894Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-08T09:05:23.985Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-08T09:05:23.986Z] > authorizing via signed-in user (atavva3@gmail.com)
+[debug] [2022-12-08T09:05:23.986Z] [iam] checking project bear-blog for permissions ["firebase.projects.get"]
+[debug] [2022-12-08T09:05:23.987Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bear-blog:testIamPermissions [none]
+[debug] [2022-12-08T09:05:23.988Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bear-blog:testIamPermissions x-goog-quota-user=projects/bear-blog
+[debug] [2022-12-08T09:05:23.988Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bear-blog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-08T09:05:24.097Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bear-blog:testIamPermissions 200
+[debug] [2022-12-08T09:05:24.097Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bear-blog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-08T09:05:24.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog [none]
+[debug] [2022-12-08T09:05:24.324Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog 200
+[debug] [2022-12-08T09:05:24.324Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog {"projectId":"bear-blog","projectNumber":"266223683560","displayName":"bear-blog","name":"projects/bear-blog","resources":{"hostingSite":"bear-blog","storageBucket":"bear-blog.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9913f7f8-dea0-44b8-9d7c-83b7be9a0aa6"}
+[info] 
+[info] === Serving from '/Users/anitavva/Desktop/Cubstart Web/project/my-app'...
+[info] 
+[debug] [2022-12-08T09:05:24.327Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bear-blog/sites 
+[debug] [2022-12-08T09:05:24.863Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bear-blog/sites 200
+[debug] [2022-12-08T09:05:24.863Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bear-blog/sites {"sites":[{"name":"projects/bear-blog/sites/bear-blog","defaultUrl":"https://bear-blog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-08T09:05:24.863Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog/webApps/-/config [none]
+[debug] [2022-12-08T09:05:25.438Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog/webApps/-/config 200
+[debug] [2022-12-08T09:05:25.438Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog/webApps/-/config {"projectId":"bear-blog","appId":"1:266223683560:web:3a30436c38aa3df2b5865d","storageBucket":"bear-blog.appspot.com","locationId":"us-central","apiKey":"AIzaSyDSJwKWKgzd8W49qVYVvjY3kvGHpciWyYU","authDomain":"bear-blog.firebaseapp.com","messagingSenderId":"266223683560"}
+[debug] [2022-12-08T09:05:25.466Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog [none]
+[debug] [2022-12-08T09:05:25.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog 200
+[debug] [2022-12-08T09:05:25.777Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bear-blog {"projectId":"bear-blog","projectNumber":"266223683560","displayName":"bear-blog","name":"projects/bear-blog","resources":{"hostingSite":"bear-blog","storageBucket":"bear-blog.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9913f7f8-dea0-44b8-9d7c-83b7be9a0aa6"}
+[info] i  hosting[bear-blog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[bear-blog]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [08/Dec/2022:09:05:45 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Dec/2022:09:05:45 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Dec/2022:09:05:46 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Dec/2022:09:05:46 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Dec/2022:09:05:46 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Dec/2022:09:05:46 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}

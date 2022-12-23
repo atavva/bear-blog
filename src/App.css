@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 5rem;
+  border-radius: 25px;
+}
+
+.header-pics {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.high-five-bear {
+  border-radius: 25px;
+  width: 27%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+#oskipic {
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.blushing-bear {
+  border-radius: 25px;
+  width: 28%;
+  height: auto;
+  margin-bottom:2rem;
+}
+
+.thumbs-up-bear {
+  margin-top: 5rem;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.post-content {
+  padding: 2rem;
+  height: 5rem;
+  overflow: hidden;
+
+}
+
+
+.post {
+  border-radius: 25px;
+  background: white;
+  box-shadow: rgba(255, 221, 0, 0.979) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.entry {
+  border-radius: 25px;
+  background: white;
+  box-shadow: rgb(113, 196, 237) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.entry-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight:300;
+  font-size: 2vw;
+}
+
+.username {
+  padding-top: 1rem;
+}
+
+.sign-in-prep {
+  margin-top: 5rem;
+}
+
+.notSignedIn {
+  margin-top: 5rem;
+}
+
+.welcomeMessage {
+  margin-top: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.signInHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.afterSignedIn {
+  margin-top: 5rem;
+}
+
+.signedIn {
+  margin-top: 5rem;
+}
+
+.submitButton {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  align-items: center;
+  background-color: rgba(255, 221, 0, 0.979);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 2rem;
+}
+
+.btn-primary:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.btn-primary:hover:after {
+  transform: translate(0, 0);
+}
+
+.btn-primary:active {
+  background-color: rgba(255, 221, 0, 0.979);
+  outline: 0;
+}
+
+.btn-primary:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    padding: 0 40px;
+  }
+}
+
+.signedInToPost {
+  margin-top: 5rem;
+}
+
+.notSignedInToPost {
+  margin-top: 5rem;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #003262;
+  --color-2: #EE1F60;
+  --color-3: #6C3302;
+  margin-bottom: 5rem;
+}
+
+.title-word-2 {
+  --color-1: #DDD5C7;
+  --color-2: #46535E;
+  --color-3: #859438;
+  margin-bottom: 5rem;
+}
+
+.title-word-3 {
+  --color-1: #44bf37;
+  --color-2: #a25fa5;
+  --color-3: #ED4E33;
+  margin-bottom: 5rem;
+}
+
+.title-word-4 {
+  --color-1: #584F29;
+  --color-2: #DF8453;
+  --color-3: #a58356;
+  margin-bottom: 5rem;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 20vh;
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.navBar {
+  background-color: #FFE5B4;
+}
+
+.post-start {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.post-hover {
+  margin-top: 7rem;
+}
+
+.post-info {
+  margin-top: 5rem;
+}
+
+.post-user-info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
